@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202354905440",
+    "project_id": "decor-app-1d4cc",
+    "storage_bucket": "decor-app-1d4cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202354905440:android:ed6bed21713fde5a9d0e05",
+        "android_client_info": {
+          "package_name": "com.example.decor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxGQx5qyPePYf9YudjrbCpZ2D_4a8vodw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
