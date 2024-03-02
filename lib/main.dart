@@ -1,7 +1,15 @@
 import 'package:decor/HomeScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
+  } catch (errorMsg) {
+    print(errorMsg);
+  }
+
   runApp(const MyApp());
 }
 
