@@ -190,6 +190,52 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
     );
   }
 
+//Show DIALOG
+  showDialogBox() {
+    return showDialog(
+        context: context,
+        builder: (c) {
+          return SimpleDialog(
+            backgroundColor: Colors.purpleAccent,
+            title: const Text(
+              'Item Imagem',
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            children: [
+              //Capture Image With Camera
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text(
+                  'Capture Image With Camera',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+
+              //Imagem da Galeria
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text(
+                  'Choose Image From Gallery',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+
+              //Cancell
+              SimpleDialogOption(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text(
+                  'Cancell',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+          );
+        });
+  }
+
 //default Screen
 
   Widget defaultScreen() {
@@ -218,7 +264,9 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
               ElevatedButton(
                   style:
                       ElevatedButton.styleFrom(backgroundColor: Colors.black54),
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialogBox();
+                  },
                   child: const Text(
                     'Add New Item',
                     style: TextStyle(color: Colors.white70),
