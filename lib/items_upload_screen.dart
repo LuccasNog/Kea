@@ -1,6 +1,9 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class ItemsUploadScreen extends StatefulWidget {
   @override
@@ -205,7 +208,9 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
             children: [
               //Capture Image With Camera
               SimpleDialogOption(
-                onPressed: () {},
+                onPressed: () {
+                  captureImageWithPhoneCamera();
+                },
                 child: const Text(
                   'Capture Image With Camera',
                   style: TextStyle(color: Colors.white),
@@ -214,7 +219,9 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
 
               //Imagem da Galeria
               SimpleDialogOption(
-                onPressed: () {},
+                onPressed: () {
+                  chooseImageFromPhoneGallery();
+                },
                 child: const Text(
                   'Choose Image From Gallery',
                   style: TextStyle(color: Colors.white),
@@ -237,6 +244,59 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
   }
 
 //default Screen
+
+  captureImageWithPhoneCamera() async {
+    try {
+      // aqui vamos pegar a imagem
+      final pickedImage =
+          await ImagePicker().pickImage(source: ImageSource.camera);
+
+      if (pickedImage != null) {
+        String? imagePath = pickedImage.path;
+        imageFileUint8List = await pickedImage.readAsBytes();
+
+        //remove background from image
+        //make image transpoararente
+
+        setState(() {
+          imageFileUint8List;
+        });
+      }
+    } catch (erroMsg) {
+      print(erroMsg.toString());
+
+      setState(() {
+        imageFileUint8List = null;
+      });
+    }
+  }
+
+  chooseImageFromPhoneGallery() async {
+    try {
+      Navigator.pop(context);
+
+      final pickedImage =
+          await ImagePicker().pickImage(source: ImageSource.gallery);
+
+      if (pickedImage != null) {
+        String imagePath = pickedImage.path;
+        imageFileUint8List = await pickedImage.readAsBytes();
+
+        //remove background from image
+        //make image transpoararente
+
+        setState(() {
+          imageFileUint8List;
+        });
+      }
+    } catch (erroMsg) {
+      print(erroMsg.toString());
+
+      setState(() {
+        imageFileUint8List = null;
+      });
+    }
+  }
 
   Widget defaultScreen() {
     return Scaffold(
@@ -278,6 +338,6 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return defaultScreen();
+    return imageFileUint8List == null ? defaultScreen() : uploadFormScreen();
   }
 }
