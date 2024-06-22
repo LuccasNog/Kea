@@ -1,4 +1,4 @@
-import 'package:decor/HomeScreen.dart';
+import 'package:decor/app/HomeScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
