@@ -1,4 +1,4 @@
-import 'package:decor/app/items_upload_screen.dart';
+import 'package:decor/app/View/items_upload_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
