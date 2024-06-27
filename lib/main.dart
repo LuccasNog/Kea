@@ -1,4 +1,4 @@
-import 'package:decor/HomeScreen.dart';
+import 'package:decor/app/View/HomeScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kea',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+          //primarySwatch: Colors.black12,
+          ),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
