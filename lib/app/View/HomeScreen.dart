@@ -1,4 +1,4 @@
-import 'package:decor/app/View/items_upload_screen.dart';
+import 'package:decor/app/View/productsUi/product_Upload.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (c) => ItemsUploadScreen()));
+                    MaterialPageRoute(builder: (c) => ProductUploadScreen()));
               },
               icon: const Icon(
                 Icons.add,

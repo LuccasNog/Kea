@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kea',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+          //primarySwatch: Colors.black12,
+          ),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );

@@ -5,12 +5,12 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-class ItemsUploadScreen extends StatefulWidget {
+class ProductUploadScreen extends StatefulWidget {
   @override
-  State<ItemsUploadScreen> createState() => _ItemsUploadScreenState();
+  State<ProductUploadScreen> createState() => _ProductUploadScreenState();
 }
 
-class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
+class _ProductUploadScreenState extends State<ProductUploadScreen> {
   // imagem da memoria
   Uint8List? imageFileUint8List;
 
@@ -32,12 +32,12 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
 
   Widget uploadFormScreen() {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.black,
         title: const Text(
-          'Upload New Item',
+          'Upload de Imagens',
           style: TextStyle(
               fontSize: 18,
               letterSpacing: 2,
@@ -199,12 +199,7 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
         context: context,
         builder: (c) {
           return SimpleDialog(
-            backgroundColor: Colors.purpleAccent,
-            title: const Text(
-              'Item Imagem',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
+            backgroundColor: Colors.black,
             children: [
               //Capture Image With Camera
               SimpleDialogOption(
@@ -212,7 +207,7 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
                   captureImageWithPhoneCamera();
                 },
                 child: const Text(
-                  'Capture Image With Camera',
+                  'Tirar foto da sua Câmera',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -223,7 +218,7 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
                   chooseImageFromPhoneGallery();
                 },
                 child: const Text(
-                  'Choose Image From Gallery',
+                  'Escolher Imagem da Galeria',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -234,7 +229,7 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
                   Navigator.pop(context);
                 },
                 child: const Text(
-                  'Cancell',
+                  'Cancelar fotos',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -300,12 +295,12 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
 
   Widget defaultScreen() {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         appBar: AppBar(
             centerTitle: true,
-            backgroundColor: Colors.purple,
+            backgroundColor: Colors.black,
             title: const Text(
-              'Upload New Item',
+              'Upload de Imagens',
               style: TextStyle(
                   fontSize: 18,
                   letterSpacing: 2,
@@ -317,18 +312,18 @@ class _ItemsUploadScreenState extends State<ItemsUploadScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Icon(
-                Icons.add_photo_alternate,
-                color: Colors.white,
-                size: 200,
+                Icons.camera_front,
+                color: Colors.black,
+                size: 150,
               ),
               ElevatedButton(
                   style:
-                      ElevatedButton.styleFrom(backgroundColor: Colors.black54),
+                      ElevatedButton.styleFrom(backgroundColor: Colors.black),
                   onPressed: () {
                     showDialogBox();
                   },
                   child: const Text(
-                    'Add New Item',
+                    'Adicione um Item',
                     style: TextStyle(color: Colors.white70),
                   ))
             ],
