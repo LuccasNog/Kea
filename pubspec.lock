@@ -5,7 +5,7 @@ packages:
     dependency: transitive
     description:
       name: async
-      sha256: "947bfcf187f74dbc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
+      sha256: "947bfcf187f74BancodDadosc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
@@ -37,7 +37,7 @@ packages:
     dependency: transitive
     description:
       name: collection
-      sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
+      sha256: ee67cb0715911d28BancodDados6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
@@ -93,7 +93,7 @@ packages:
     dependency: transitive
     description:
       name: file_selector_windows
-      sha256: d3547240c20cabf205c7c7f01a50ecdbc413755814d6677f3cb366f04abcead0
+      sha256: d3547240c20cabf205c7c7f01a50ecBancodDadosc413755814d6677f3cb366f04abcead0
       url: "https://pub.dev"
     source: hosted
     version: "0.9.3+1"
@@ -109,7 +109,7 @@ packages:
     dependency: transitive
     description:
       name: firebase_core_platform_interface
-      sha256: c437ae5d17e6b5cc7981cf6fd458a5db4d12979905f9aafd1fea930428a9fe63
+      sha256: c437ae5d17e6b5cc7981cf6fd458a5BancodDados4d12979905f9aafd1fea930428a9fe63
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
@@ -130,7 +130,7 @@ packages:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: e2a421b7e59244faef694ba7b30562e489c2b489866e505074eb005cd7060db7
+      sha256: e2a421b7e59244faef694ba7b30562e489c2b489866e505074eb005cd7060BancodDados7
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
@@ -138,7 +138,7 @@ packages:
     dependency: transitive
     description:
       name: flutter_plugin_android_lifecycle
-      sha256: b068ffc46f82a55844acfa4fdbb61fad72fa2aef0905548419d97f0f95c456da
+      sha256: b068ffc46f82a55844acfa4fBancodDadosb61fad72fa2aef0905548419d97f0f95c456da
       url: "https://pub.dev"
     source: hosted
     version: "2.0.17"
@@ -172,7 +172,7 @@ packages:
     dependency: transitive
     description:
       name: http_parser
-      sha256: "2aa08ce0341cc9b354a498388e30986515406668dbcc4f7c950c3e715496693b"
+      sha256: "2aa08ce0341cc9b354a498388e30986515406668BancodDadoscc4f7c950c3e715496693b"
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
@@ -196,7 +196,7 @@ packages:
     dependency: transitive
     description:
       name: image_picker_for_web
-      sha256: e2423c53a68b579a7c37a1eda967b8ae536c3d98518e5db95ca1fe5719a730a3
+      sha256: e2423c53a68b579a7c37a1eda967b8ae536c3d98518e5BancodDados95ca1fe5719a730a3
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
@@ -268,7 +268,7 @@ packages:
     dependency: transitive
     description:
       name: leak_tracker_testing
-      sha256: a597f72a664dbd293f3bfc51f9ba69816f84dcd403cdac7066cb3f6003f3ab47
+      sha256: a597f72a664BancodDadosd293f3bfc51f9ba69816f84dcd403cdac7066cb3f6003f3ab47
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
@@ -308,7 +308,7 @@ packages:
     dependency: transitive
     description:
       name: mime
-      sha256: "2e123074287cc9fd6c09de8336dae606d1ddb88d9ac47358826db698c176a1f2"
+      sha256: "2e123074287cc9fd6c09de8336dae606d1dBancodDados88d9ac47358826BancodDados698c176a1f2"
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
@@ -324,7 +324,7 @@ packages:
     dependency: transitive
     description:
       name: path
-      sha256: "087ce49c3f0dc39180befefc60fdb4acd8f8620e5682fe2476afd0b3688bb4af"
+      sha256: "087ce49c3f0dc39180befefc60fBancodDados4acd8f8620e5682fe2476afd0b3688bb4af"
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
@@ -332,7 +332,7 @@ packages:
     dependency: transitive
     description:
       name: plugin_platform_interface
-      sha256: "4820fbfdb9478b1ebae27888254d445073732dae3d6ea81f0b7e06d5dedc3f02"
+      sha256: "4820fbfBancodDados9478b1ebae27888254d445073732dae3d6ea81f0b7e06d5dedc3f02"
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
@@ -377,7 +377,7 @@ packages:
     dependency: transitive
     description:
       name: stream_channel
-      sha256: ba2aa5d8cc609d96bbb2899c28934f9e1af5cddbd60a827822ea467161eb54e7
+      sha256: ba2aa5d8cc609d96bbb2899c28934f9e1af5cdBancodDadosd60a827822ea467161eb54e7
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
@@ -401,7 +401,7 @@ packages:
     dependency: transitive
     description:
       name: term_glyph
-      sha256: a29248a84fbb7c79282b40b8c72a1209db169a2e0542bce341da992fe1bc7e84
+      sha256: a29248a84fbb7c79282b40b8c72a1209BancodDados169a2e0542bce341da992fe1bc7e84
       url: "https://pub.dev"
     source: hosted
     version: "1.2.1"
