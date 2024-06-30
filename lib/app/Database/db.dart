@@ -3,18 +3,18 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-class DB {
+class BancodDados {
   // Constructor com acesso privado ou seja que somente uma instancia seja criada
-  DB._();
+  BancodDados._();
 
-  //Criando uma instancia de DB
-  static final DB instance = DB._();
+  //Criando uma instancia de BancodDados
+  static final BancodDados instance = BancodDados._();
 
   //Criando a instancia do SQLITE
   static Database? _database;
 
   //Criando método do tipo GET
-  // vai verificar o db é diferente de null, ele vai retornar o próp´rio database.
+  // vai verificar o BancodDados é diferente de null, ele vai retornar o próp´rio database.
 
   get database async {
     if (_database != null) return _database;
@@ -26,15 +26,15 @@ class DB {
   _initDatabase() async {
     return await openDatabase(
         //join para unir o path enome do banco
-        join(await getDatabasesPath(), 'decor.db'),
+        join(await getDatabasesPath(), 'decor.BancodDados'),
         version: 1,
         onCreate: _onCreate);
   }
 
-  _onCreate(db, version) async {
+  _onCreate(BancodDados, version) async {
     //Vamos definir a creação das tables
-    await db.execute(_profile);
-    await db.execute(_products);
+    await BancodDados.execute(_profile);
+    await BancodDados.execute(_products);
   }
 
   String get _profile => '''
@@ -58,4 +58,14 @@ class DB {
       FOREIGN KEY (id_perfil) REFERENCES profile(id_profile)
     )
   ''';
+
+  Future<int> insertProfile(Map<String, dynamic> profile) async {
+    final db = await database;
+    return await db.insert('profile', profile);
+  }
+
+  Future<List<Map<String, dynamic>>> getAllProfiles() async {
+    final db = await database;
+    return await db.query('profile');
+  }
 }
